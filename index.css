@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #f9ca24;
+}
+
+p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+/* 🔥 RESPONSIVE GRID */
+#gameGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 8px;
+  margin: 15px auto;
+  padding: 10px;
+}
+
+/* 🔥 RESPONSIVE CELL */
+.cell {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: transform 0.2s, background-color 0.35s;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+}
+
+/* 🔥 OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  z-index: 100;
+  animation: float 2s ease-in-out infinite;
+}
+
+.overlay-button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 🔥 FLOAT ANIMATION */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+#startGameBtn{
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  background-color: #f9ca24;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#startGameBtn:hover{
+  background-color: #f6b93b;
+}
+
