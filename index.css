@@ -102,4 +102,14 @@ p {
 #startGameBtn:hover{
   background-color: #f6b93b;
 }
+#targetColorBox{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  border-radius: 4px;
+  border: 2px solid white;
+  vertical-align: middle;
+}
+
 
