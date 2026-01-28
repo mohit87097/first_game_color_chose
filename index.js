@@ -3,7 +3,7 @@ const colourNames = [
   "Pink","Brown","Lime","Olive","Teal","Navy","Maroon","Silver"
 ];
 
-let winingScore = 20;
+let winingScore = 15;
 let targetcolor = "";
 let score = 0;
 let timer_in = 120;
