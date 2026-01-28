@@ -94,6 +94,8 @@ let initalizegame = () => {
 
   document.getElementById("score").textContent = score;
   document.getElementById("timer").textContent = formattime(timer_in);
+  document.getElementById("targetScore").textContent = winingScore;
+
 
   document.getElementById("conggrat").style.display = "none";
   document.getElementById("lose").style.display = "none";
