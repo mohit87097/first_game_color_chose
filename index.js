@@ -107,8 +107,8 @@ let initalizegame = () => {
   clearInterval(gameinterval);
   clearInterval(timerinterval);
 
-  gameinterval = setInterval(setrandomcolor, 1000);
-  timerinterval = setInterval(updatetimer, 1000);
+  gameinterval = setInterval(setrandomcolor, 500);
+  timerinterval = setInterval(updatetimer, 500);
 };
 
 // 🚀 start game
